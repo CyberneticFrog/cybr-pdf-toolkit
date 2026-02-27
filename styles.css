@@ -414,10 +414,10 @@ select.inp option{ color:#111; background-color:#fff; }
 
 /* ========== MOBILE RESPONSIVE ========== */
 @media (max-width: 980px){
-  
+
   .topbar{
-  flex-direction: column !important;
-  align-items: flex-start !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
 
   .brand{
@@ -431,22 +431,14 @@ select.inp option{ color:#111; background-color:#fff; }
     flex-wrap: wrap !important;
   }
 
+  .topbar-right{ gap: 8px; }
+
   .pill{
     white-space: normal;
     max-width: 100%;
   }
+
   .body{ grid-template-columns: 1fr; }
-
-  .topbar{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .topbar-right{
-    width: 100%;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
 
   .sidebar{
     position: relative;

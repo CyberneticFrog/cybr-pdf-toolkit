@@ -1,6 +1,6 @@
 /* ========== CSS VARIABLES: THEME TOKENS ========== */
 :root{
-  --bg0: #000000;
+  --bg0: #0b111a;
   --bg1: #071021;
   --surface: rgba(255,255,255,0.05);
   --surface2: rgba(255,255,255,0.07);
@@ -50,7 +50,7 @@ body{
   margin:0;
   font-family: var(--font);
   color: var(--text);
-  background: linear-gradient(180deg, var(--bg0), var(--bg1));
+  background: var(--bg0);
 }
 
 /* ========== APP SHELL LAYOUT ========== */
@@ -247,7 +247,7 @@ body{
   text-align:left;
   border: 1px solid rgba(255,255,255,0.10);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.243);
+  background: rgba(255, 255, 255, 0.06);
   padding: 12px;
   cursor:pointer;
   transition: transform .08s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
@@ -434,20 +434,28 @@ select.inp option{ color:#111; background-color:#fff; }
     overflow-x: auto;
     overflow-y: hidden;
     padding: 10px;
+    flex-wrap: wrap; 
   }
   .nav-item{ width: auto; min-width: 120px; justify-content: center; }
-  .sidebar-foot{ display:none; }
+  .sidebar-foot{
+    display:flex;
+    width: 100%;
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+    margin-top: 10px;
+}
   .grid{ grid-template-columns: 1fr; }
   .tile-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .li-name{ max-width: 260px; }
   .topbar{
-  flex-direction: column;
-  align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .topbar-right{
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 8px;
 }
 }
 

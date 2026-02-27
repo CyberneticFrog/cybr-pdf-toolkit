@@ -414,6 +414,27 @@ select.inp option{ color:#111; background-color:#fff; }
 
 /* ========== MOBILE RESPONSIVE ========== */
 @media (max-width: 980px){
+  
+  .topbar{
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  }
+
+  .brand{
+    width: 100%;
+    min-width: 0;
+  }
+
+  .topbar-right{
+    width: 100%;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+  }
+
+  .pill{
+    white-space: normal;
+    max-width: 100%;
+  }
   .body{ grid-template-columns: 1fr; }
 
   .topbar{

@@ -50,10 +50,7 @@ body{
   margin:0;
   font-family: var(--font);
   color: var(--text);
-  background:
-    radial-gradient(900px 480px at 18% 20%, rgba(68,209,255,0.16), rgba(0,0,0,0)),
-    radial-gradient(900px 560px at 80% 10%, rgba(122,92,255,0.12), rgba(0,0,0,0)),
-    linear-gradient(180deg, var(--bg0), var(--bg1));
+  background: linear-gradient(180deg, var(--bg0), var(--bg1));
 }
 
 /* ========== APP SHELL LAYOUT ========== */
@@ -68,7 +65,9 @@ body{
   padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, var(--surface2), var(--surface));
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--shadow2);
 }
 
@@ -188,7 +187,9 @@ body{
 .workspace{
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, var(--surface2), var(--surface));
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow2);
   padding: 14px;
   overflow:hidden;
@@ -300,10 +301,12 @@ body{
 /* ========== GRID / CARDS ========== */
 .grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .card{
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255,255,255,0.10);
   border-radius: var(--radius);
   background: rgba(255,255,255,0.03);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
   padding: 12px;
 }
 .card-title{
